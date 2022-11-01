@@ -1,7 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
+import { NxFileUploaderModule } from '@aposin/ng-aquila/file-uploader';
+import {
+  NxMessageToastConfig,
+  NxMessageToastService,
+} from '@aposin/ng-aquila/message';
+import { HttpClient, HttpParams } from '@angular/common/http';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
+
+export const myCustomConfig: NxMessageToastConfig = {
+  duration: 3000,
+  context: 'success',
+  announcementMessage: 'File was uploaded successfully!',
+};
+
 
 @Component({
   selector: 'app-heroes',
@@ -10,6 +25,7 @@ import { HeroService } from '../hero.service';
 })
 export class HeroesComponent implements OnInit {
   heroes: Hero[] = [];
+  
 
   constructor(private heroService: HeroService) { }
 
@@ -37,3 +53,4 @@ export class HeroesComponent implements OnInit {
   }
 
 }
+

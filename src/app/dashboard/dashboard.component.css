@@ -21,8 +21,8 @@ h2 {
   align-items: flex-start;
 }
 
-a {
-  background-color: #3f525c;
+button {
+  background-color: #2d4769;
   border-radius: 2px;
   padding: 1rem;
   font-size: 1.2rem;
@@ -42,12 +42,12 @@ a {
 }
 
 @media (min-width: 600px) {
-  a {
+  button {
     width: 18%;
     box-sizing: content-box;
   }
 }
 
-a:hover {
+button:hover {
   background-color: black;
 }

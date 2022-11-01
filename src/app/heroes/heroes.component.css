@@ -22,7 +22,7 @@
     left: .1em;
   }
   
-  .heroes a {
+  .heroes button {
     color: #333;
     text-decoration: none;
     background-color: #EEE;
@@ -34,12 +34,12 @@
     width: 100%;
   }
   
-  .heroes a:hover {
+  .heroes button:hover {
     color: #2c3a41;
     background-color: #e6e6e6;
   }
   
-  .heroes a:active {
+  .heroes button:active {
     background-color: #525252;
     color: #fafafa;
   }
@@ -69,7 +69,7 @@
   
   .add-button:hover {
     color: white;
-    background-color: #42545C;
+    background-color: #2d4769;
   }
   
   button.delete {
@@ -79,7 +79,7 @@
     background-color: white;
     color:  #525252;
     font-size: 1.1rem;
-    margin: 0;
+    margin: 1px;
     padding: 1px 10px 3px 10px;
   }
   

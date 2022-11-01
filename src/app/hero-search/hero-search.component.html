@@ -4,9 +4,9 @@
   
     <ul class="search-result">
       <li *ngFor="let hero of heroes$ | async" >
-        <a routerLink="/detail/{{hero.id}}">
+        <button nxButton="secondary" style="color: orange;" routerLink="/detail/{{hero.id}}">
           {{hero.name}}
-        </a>
+        </button>
       </li>
     </ul>
   </div>
